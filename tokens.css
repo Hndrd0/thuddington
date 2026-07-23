@@ -1,0 +1,94 @@
+/* Hallmark · macrostructure: Long Document · tone: modern-minimal · theme: Cobalt */
+QWidget {
+    background-color: #f7f7f8;
+    color: #1a1a2e;
+    font-family: "Segoe UI", "Inter", system-ui, sans-serif;
+    font-size: 14px;
+}
+
+/* Header */
+QLabel#header {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: 8px;
+}
+
+/* Slider label */
+QLabel#sliderLabel {
+    font-size: 12px;
+    font-weight: 500;
+    color: #6b6b80;
+    margin-top: 12px;
+}
+
+/* Mapping label */
+QLabel#mappingLabel {
+    font-size: 12px;
+    font-weight: 500;
+    color: #6b6b80;
+}
+
+/* Slider */
+QSlider::groove:horizontal {
+    height: 4px;
+    background: #d8d8e0;
+    border-radius: 2px;
+}
+QSlider::handle:horizontal {
+    width: 16px;
+    height: 16px;
+    margin: -6px 0;
+    background: #4a6fa5;
+    border-radius: 8px;
+    border: 2px solid #f7f7f8;
+}
+QSlider::handle:horizontal:hover {
+    background: #3a5a8a;
+}
+QSlider::handle:horizontal:pressed {
+    background: #2e4a73;
+}
+QSlider::sub-page:horizontal {
+    background: #4a6fa5;
+    border-radius: 2px;
+}
+
+/* Mapping editor */
+QPlainTextEdit#mappingEdit {
+    font-family: "Cascadia Code", "Consolas", monospace;
+    font-size: 13px;
+    background-color: #ffffff;
+    color: #1a1a2e;
+    border: 1px solid #d8d8e0;
+    border-radius: 8px;
+    padding: 10px;
+    min-height: 80px;
+    selection-background-color: #c8d8ee;
+}
+QPlainTextEdit#mappingEdit:focus {
+    border: 1px solid #4a6fa5;
+}
+
+/* Save button */
+QPushButton#saveBtn {
+    background-color: #4a6fa5;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    min-height: 20px;
+}
+QPushButton#saveBtn:hover {
+    background-color: #3a5a8a;
+}
+QPushButton#saveBtn:pressed {
+    background-color: #2e4a73;
+}
+QPushButton#saveBtn:focus-visible {
+    outline: none;
+    border: 2px solid #4a6fa5;
+    padding: 8px 22px;
+}

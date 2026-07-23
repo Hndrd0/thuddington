@@ -1,0 +1,27 @@
+# Git ignore for Thuddington project
+# Build artifacts
+build/
+dist/
+*.spec
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+# Virtual environment
+.venv/
+.venv312/
+venv/
+env/
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*~
+# Logs and temporary files
+*.log
+tmp/
+# Configuration files (if they contain sensitive info or are generated)
+config.json.local
+# OS-specific files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,9 @@
+{
+  "sensitivity": 0.4,
+  "thunk_mappings": {
+    "1": "notepad.exe",
+    "2": "calc.exe",
+    "3": "explorer.exe"
+  },
+  "hotkey": "ctrl+shift+space"
+}

@@ -3,12 +3,6 @@ import subprocess
 import os
 import sys
 from pathlib import Path
-import codecs # Import codecs module
-
-def build():
-    # Set stdout encoding to UTF-8 for special characters
-    sys.stdout.reconfigure(encoding='utf-8')
-    sys.stderr.reconfigure(encoding='utf-8')
 
 def build():
     project_dir = Path(__file__).parent.resolve()
@@ -40,10 +34,10 @@ def build():
     result = subprocess.run(cmd, cwd=project_dir)
     
     if result.returncode == 0:
-        print("\n✓ Standalone build completed successfully.")
+        print("\n[SUCCESS] Standalone build completed successfully.")
         print(f"Exe created at: {project_dir / 'dist' / 'ThumpShortcut.exe'}")
     else:
-        print("\n✗ Build failed")
+        print("\n[FAILED] Build failed")
         sys.exit(result.returncode)
 
 if __name__ == "__main__":

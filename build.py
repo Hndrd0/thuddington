@@ -3,6 +3,12 @@ import subprocess
 import os
 import sys
 from pathlib import Path
+import codecs # Import codecs module
+
+def build():
+    # Set stdout encoding to UTF-8 for special characters
+    sys.stdout.reconfigure(encoding='utf-8')
+    sys.stderr.reconfigure(encoding='utf-8')
 
 def build():
     project_dir = Path(__file__).parent.resolve()
